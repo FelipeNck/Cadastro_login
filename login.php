@@ -21,7 +21,7 @@ session_start();
         <?php
         if(isset($_SESSION['invalido'])):
         ?>
-        <div class="error">
+        <div class="msg">
             <p>Email ou senha inválidos</p>
         </div>
         <?php
@@ -29,7 +29,7 @@ session_start();
         unset($_SESSION['invalido']);
         if(isset($_SESSION['valido'])):
         ?>
-        <div class="error">
+        <div class="msg">
             <p>Login feito com sucesso</p>
         </div>
         <?php

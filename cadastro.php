@@ -25,9 +25,9 @@ session_start();
         <?php
         if(isset($_SESSION['usuario_existe'])):
         ?>
-        <div class="error">
+        <div class="msg">
             <p>Usuário já cadastrado</p>
-            <p>Efetue o login clicando <a href="login.php">aqui</a></p>
+            <p>Efetue o login clicando <a href="login.php" style="color: white;">aqui</a></p>
         </div>
         <?php
         endif;
